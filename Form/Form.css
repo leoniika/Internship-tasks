@@ -1,0 +1,59 @@
+body{
+    background-color: rgb(198, 97, 2);
+    margin: 0;
+    display: flex;
+    height: 100vh;
+}
+
+body h1{
+
+    position: absolute;
+    top: 10px;
+    left: 735px;
+
+    color: aquamarine;
+    color: rgb(84, 159, 134);
+    background-color: rgb(233, 183, 137);
+    text-align: center;
+    margin: 0;
+}
+
+.Form-left{
+    width: 50%;                  /*Left half*/
+    height: 100%;
+
+    background-color: azure;
+
+    display: flex;              /*Use Flexbox to arrange internal content.*/
+    justify-content: center;    /*Photo in center horizontally*/
+    align-items: center;        /*same but vertically*/
+
+    /*پیشنهاد چت جی‌پی‌تی*/
+    max-width: 80%;
+    height: auto;
+}
+
+.Form-right {
+    width: 50%;
+    height: 100%;
+
+    background-color: rgb(198, 97, 2);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+    gap: 20px;
+}
+
+.Form-right button {
+    color: rgb(84, 159, 134);
+    background-color: rgb(233, 183, 137);
+}
+
+@media (max-width: 768px) {  
+    .Form-left {
+      display: none;
+    }
+  }    /*-------------- responsive --------------*/
