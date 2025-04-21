@@ -1,4 +1,4 @@
-import java.awt.*; //grafic
+import java.awt.*; //graphic
 import java.awt.event.*; //click
 
 class Fdemo extends Frame implements ActionListener {  /* این کلاس قراره رفتار مربوط به کلیک کردن یا رویداد مشابه رو انجام بده */
@@ -26,8 +26,8 @@ class Fdemo extends Frame implements ActionListener {  /* این کلاس قرا
         b1.addActionListener(this);
         add(b1);
         //-----------------------------
-        for (int i = 1; i <= 3; i++) {   //1 row
-            for (int j = 1; j <= 3; j++) {  //2 row
+        for (int i = 1; i <= 3; i++) {   
+            for (int j = 1; j <= 3; j++) {  //3 x 3 buttons
                 b[k] = new Button();
                 b[k].setSize(100, 100);  //Button size
                 b[k].setLocation(x, y);
@@ -41,14 +41,14 @@ class Fdemo extends Frame implements ActionListener {  /* این کلاس قرا
                 x += 100;
             }
             x = 8;
-            y += 100;
+            y += 100; //go 100 pixels forward
             /*[0][1][2]     ← y = 28
               [3][4][5]     ← y = 128
               [6][7][8]     ← y = 228  */
         }
     }
 
-    public void actionPerformed(ActionEvent e) { //abstrace methode
+    public void actionPerformed(ActionEvent e) { //abstrace methode - must be in this class
         if (e.getSource() == b1) { //restart button click
             for (int i = 0; i <= 8; i++) {
                 b[i].setLabel("");
