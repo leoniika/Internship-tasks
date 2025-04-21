@@ -24,11 +24,10 @@ body h1{
 
     background-color: azure;
 
-    display: flex;              /*Use Flexbox to arrange internal content.*/
-    justify-content: center;    /*Photo in center horizontally*/
-    align-items: center;        /*same but vertically*/
-
-    /*پیشنهاد چت جی‌پی‌تی*/
+    display: flex;              
+    justify-content: center; 
+    align-items: center;        
+    
     max-width: 80%;
     height: auto;
 }
@@ -52,8 +51,9 @@ body h1{
     background-color: rgb(233, 183, 137);
 }
 
+/*-------------- responsive --------------*/
 @media (max-width: 768px) {  
     .Form-left {
       display: none;
     }
-  }    /*-------------- responsive --------------*/
+  }    
