@@ -3,7 +3,7 @@ body {
   margin: 0;
   display: flex;
   height: 100vh;
-  position: relative; /* برای اینکه h1 بتونه نسبت به body تنظیم شه */
+  position: relative; 
 }
 
 h1 {
@@ -17,13 +17,6 @@ h1 {
   background-color: rgb(233, 183, 137);
   padding: 5px;
   margin: 0;
-
-  /*color: aquamarine;
-    color: rgb(84, 159, 134);
-    background-color: rgb(233, 183, 137);
-    top: 30ps;
-    padding: 5px;
-    margin: 0px;*/
 }
 
 .Form-left {
@@ -35,8 +28,6 @@ h1 {
   display: flex; /*Use Flexbox to arrange internal content.*/
   justify-content: center; /*Photo in center horizontally*/
   align-items: center; /*same but vertically*/
-
-  /*پیشنهاد چت جی‌پی‌تی*/
   max-width: 80%;
   height: auto;
 }
