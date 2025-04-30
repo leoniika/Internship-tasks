@@ -7,15 +7,6 @@ window.onload = function (){
 
 okButton.disabled = true; //disabling button
 
-/* checkbox.addEventListener("change", function() {
-    console.log("Checkbox state changed:", this.checked);
-    if (this.checked) {
-        document.body.style.backgroundColor = "#add8e6";
-    } else {
-        document.body.style.backgroundColor = "";
-    }
-});   */
- 
 //##############################################################
 checkbox.addEventListener("change", function() { //if change -> do this
     if (checkbox.checked) {
@@ -36,10 +27,10 @@ okButton.addEventListener("click", function() { //if clicked
     underButtonMSG.textContent = ""; 
         
     if (age < 18) {
-        underButtonMSG.textContent = "تو زیر 18 هستی";
+        underButtonMSG.textContent = "under 18";
         underButtonMSG.style.color = "black";
     } else {
-        alert("تو بالای 18 هستی");
+        alert("over 18");
     }
 });
 
