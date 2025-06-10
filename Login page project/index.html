@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title> Login process </title>
+</head>
+<body>
+    
+    <section class="Loginpage">
+        <div class="box1">
+
+            <h1 id="header"> Login page </h1> 
+
+            <div class="inputs">
+                <p> Username </p> 
+                <input type="text" placeholder="Enter your username." id="getName">
+
+                <p> Password </p> 
+                <input type="password" placeholder="Enter your password." id="getPass">
+            </div>
+
+            <div class="buttons">
+                <button id="priorityBtn"> Login </button>
+                <button id="secendaryBtn"> Create account </button>
+            </div>
+        </div>
+    </section>
+
+    <section class="CreateAccPage">
+        <div class="box2">
+
+            <h1 id="header"> Create account </h1> 
+            <h5 id="subtitle"> Enter your information </h5>
+
+            <div class="inputs">
+                <p> Username </p> 
+                <input type="text" placeholder="Enter your username." id="getNName">
+
+                <p> Phone number </p> 
+                <input type="number" placeholder="Enter your phone number. (09XXXX)" id="getNumber">
+                <img src="icon-cros.png" alt="cross" height="14.17" width="13.33" class="crossIcon" id="cossPic3">
+
+                <p> Password </p> 
+                <input type="password" placeholder="Enter your password." id="getNPass">
+                <img src="icon-cros.png" alt="cross" height="14.17" width="13.33" class="crossIcon" id="cossPic1">
+
+                <p> Repeat password </p>
+                <input type="password" placeholder="Enter your password." id="getNPass2">
+                <img src="icon-cros.png" alt="cross" height="14.17" width="13.33" class="crossIcon" id="cossPic2">
+            </div>
+
+            <div class="buttons">
+                <button id="priorityBtn"> Submit </button>
+                <button id="secendaryBtn"> Back </button>
+            </div>
+        </div>
+
+        <div class="note">
+            <p>Use the fallowing characters in your password:</p>
+            <div class="note-item">
+                <p>Upper case letter</p>
+                <input type="checkbox" class="checking" id="upper" disabled>
+            </div>
+            <div class="note-item">
+                <p>Lower case letter</p>
+                <input type="checkbox" class="checking" id="lower" disabled>
+            </div>
+            <div class="note-item">
+                <p>Symbol</p>
+                <input type="checkbox" class="checking" id="symbol" disabled>
+            </div>
+            <div class="note-item">
+                <p>Number</p>
+                <input type="checkbox" class="checking" id="number" disabled>
+            </div>
+        </div>
+    </section>
+
+    <section class="profile">
+           <h1 id="header"> User profile </h1>
+        <div class="box3">
+
+            <img src="icon.png" alt="pointer" height="12" width="7" id="icon1"> 
+            <p id="userUsername"> "username" </p>
+
+            <img src="icon.png" alt="pointer"  id="icon2"> 
+            <p id="userPhoneNumber"> "phone number" </p>
+
+            <img src="https://img.freepik.com/free-psd/3d-rendering-ui-icon_23-2149182289.jpg?semt=ais_hybrid&w=740" alt="Users profile photo" class="profilePic"> 
+         
+        </div>
+    </section>
+
+<script src="login.js" defer></script>
+
+</body>
+</html>
