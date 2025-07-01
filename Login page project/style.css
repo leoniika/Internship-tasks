@@ -182,7 +182,7 @@ input:focus {
 
 .note {
   height: 200px;
-  width: 280px;
+  width: 400px;
   border-radius: 50px;
   display: flex;
   flex-direction: column;
@@ -194,7 +194,7 @@ input:focus {
   margin: 10px;
   display: none;
   gap: 5px;
-  position: absolute;
+  position: relative;
   right: 12%;
   top: 45%;
 }
