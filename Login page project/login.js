@@ -109,7 +109,7 @@ window.onload = function () {
                 alert("Fill in both password fields");
             } 
 
-            if (phoneNumber.value.trim().length !== 12){
+            if (phoneNumber.value.trim().length !== 11){
                 phoneNumber.style.border = "4px solid #FB575A82";
                 document.getElementById("cossPic3").style.display = "block";
                 alert("Phone number is incorrect");
@@ -125,7 +125,7 @@ window.onload = function () {
                     input.value = "";
                 });
 
-            if ((pass1 === pass2) && (pass1 !== "" || pass2 !== "") && (phoneNumber.value.trim().length === 12)) {
+            if ((pass1 === pass2) && (pass1 !== "" || pass2 !== "") && (phoneNumber.value.trim().length === 11)) {
                 alert("Account created");
                 loginPage();
                 inputs.forEach(input => {
